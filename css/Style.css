@@ -2,23 +2,32 @@
 
 /* ----------General Style -------------*/
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+button.navbar-toggler:focus,
+button.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
 .navbar > .container-fluid {
   display: flex;
-  flex-wrap: inherit;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-.navbar-collapse {
-  flex-basis: 0;
-  flex-grow: 0;
-  align-items: center;
+header .form-switch .form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(228, 41, 84)'/%3e%3c/svg%3e");
 }
-.container-fluid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+header .form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb(228, 41, 84)'/%3e%3c/svg%3e");
+}
+header input#flexSwitchCheckDefault:checked {
+  background-color: #e42954;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
 }
 
 body {
@@ -112,12 +121,23 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .container-fluid {
+  /* NAVBAR */
+
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .form-check {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: end;
   }
+
+  .form-check-input {
+    margin-right: 5px;
+  }
+
+  /* TITLE, PARAGRAPH AND BUTTON  */
 
   .right-side h1 {
     font-size: 150px;
