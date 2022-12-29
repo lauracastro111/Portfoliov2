@@ -57,7 +57,6 @@ body {
 /* HERO IMAGE */
 .hero-image {
   background-color: #e42954;
-  margin-top: 25px;
   height: calc(100vh - 100px);
   text-align: center;
 }
@@ -65,12 +64,27 @@ body {
   height: 100%;
 }
 /* HERO TITLE */
-.right-side h1 {
+
+.dynamicTitleOn{
+  margin-left: -45px;
+  transition: all 0.2s ease-in;
+}
+.dynamicTitleOff{
+  margin-left: -114px;
+  transition: all 0.2s ease-in;
+}
+
+
+.right-side div {
   font-family: "yellowtile";
   font-size: 150px;
   line-height: 80%;
-  margin-bottom: 10%;
-  margin-left: -114px;
+  /* margin-left: -114px; */
+  color: #fff;
+}
+
+.right-side a{
+  text-decoration: none;
   color: #fff;
 }
 
@@ -86,6 +100,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.5px;
   margin: 0;
+  padding-top: 50px;
 }
 
 /* HERO BUTTON */
@@ -135,11 +150,14 @@ body {
 
 /* WORK PAGE */
 
+/* Multimedia content title */
+
 .title-content {
   margin-top: 2em;
   color: rgba(228, 41, 84, 0.9);
   font-family: "Anonymous Pro", monospace;
-  font-size: 2.5em;
+  font-weight: bold;
+  font-size: 3.5em;
 }
 .line {
   width: 12.5em;
@@ -204,9 +222,162 @@ body {
   width: 100%;
   overflow: hidden;
 }
+.video-grid-col-2 {
+  grid-column: span 2;
+  height: 100%;
+  /* width: 100%; */
+  overflow: hidden;
+}
+
 .image-grid-row-2 video {
   height: 100%;
 }
+
+.image-grid > img:hover,
+.image-grid-row-2:hover {
+  width: 101%;
+  height: 101%;
+  transition: all 0.3s ease;
+}
+
+/* Websites title */
+.title-websites{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-websites hr{
+  width: 40%;
+}
+
+.title-websites h2 {
+  color: #fff;
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cards-websites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-img-top {
+  width: 425px;
+}
+
+/* estilo para flip card segunb mircha ------------------------------*/
+
+.flip-card-1 {
+  margin-bottom: 5rem;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+  perspective: 10rem;
+  transform-style: flat;
+  transform-style: preserve-3d;
+}
+
+.flip-card-1:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-1 img {
+  width: 100%;
+  object-position: 0 50%;
+}
+
+.flip-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  backface-visibility: hidden;
+}
+
+.flip-front {
+  transform: rotateY(0deg);
+  background-image: url("./../assets/cabinetdepotwebsite.png");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* estilo para flip card segunb mircha------------------------ */
+
+.card-bg-2 {
+  width: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-front-gali {
+  transform: rotateY(0deg);
+  background-image: url("./../assets/websitegalileo.png");
+  background-size: cover;
+  background-position-x: -70px;
+}
+
+
+.title-paid-media{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.title-paid-media h2 {
+  color: #fff;
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.title-paid-media hr{
+  width: 38%;
+}
+
+.paid-media-padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paid-media-padre2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imagen-1 {
+  width: 650px;
+}
+
+.imagen-2 {
+  width: 680px;
+}
+
+.imagen-3 {
+  width: 690px;
+}
+
 @media (max-width: 767.98px) {
   /* NAVBAR */
 
@@ -226,7 +397,7 @@ body {
 
   /* TITLE, PARAGRAPH AND BUTTON  */
 
-  .right-side h1 {
+  .right-side div {
     font-size: 150px;
     font-size: 60px;
     margin: 0px;
@@ -267,16 +438,85 @@ body {
     justify-content: center;
     gap: 5px;
   }
+  #videoc5m{
+    display: none;
+  }
 
   .image-grid > video > source {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-}
 
-.image-grid > img:hover, .image-grid-row-2:hover{
-  width: 101%;
-  height: 101%;
-  transition:  all 0.3s ease;
+  .cards-websites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-text-front {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 18px;
+  }
+
+  .card-text-back {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 18px;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  .card-img-top {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card-img-top-2 {
+    display: flex;
+    flex-direction: column;
+    width: 215px;
+    margin-top: -128px;
+    margin-left: 25px;
+  }
+
+  .card-bg-1 {
+    width: 300px;
+    height: 151px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* z-index: 999; */
+  }
+
+  .card-bg-2 {
+    width: 300px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* z-index: 999; */
+  }
+
+  .paid-media-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .imagen-1,
+  .imagen-2,
+  .imagen-3 {
+    width: 350px;
+  }
 }

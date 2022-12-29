@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="js/Js.js">
     <title>My portfolio</title>
   </head>
   <body id="about">
@@ -59,17 +58,24 @@
 
         <!-- RIGHT SIDE -->
         <div class="right-side col-12 col-md-6 col-lg-6 col-xl-6 p-0">
-          <h1 class= "col w-100">
-            Hi There! <br />
-            I'm Laura
-          </h1>
+          <div class= "col w-100">
+            <div class="dynamicTitleOff text-hi">
+              <a href="index.html">Hi There!</a>
+            </div>
+            <div class="dynamicTitleOff text-im">
+              <a href="work.html"> I'm </a>
+            </div>
+            <div class="dynamicTitleOff text-laura">
+              <a  href="skills.html"> Laura </a>
+            </div>
+          </div>
           <p class="hero-parrafo">
             I am a social media & web designer, passionate about what I do.
             <br />
             I believe that even the impossible is possible. <br />
             You put the limits!
           </p>
-          <div class="text-center mt-5 mb-5">
+          <div class="text-center mb-5">
             <a class="hero-button" href="assets/CV2022.pdf" target="_blank">
               Resume</a>
             </div> 
@@ -77,6 +83,7 @@
         </div>
       </div>
       <footer></footer>
+      <script src="./js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
