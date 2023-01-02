@@ -65,15 +65,14 @@ body {
 }
 /* HERO TITLE */
 
-.dynamicTitleOn{
+.dynamicTitleOn {
   margin-left: -45px;
   transition: all 0.2s ease-in;
 }
-.dynamicTitleOff{
+.dynamicTitleOff {
   margin-left: -114px;
   transition: all 0.2s ease-in;
 }
-
 
 .right-side div {
   font-family: "yellowtile";
@@ -83,7 +82,7 @@ body {
   color: #fff;
 }
 
-.right-side a{
+.right-side a {
   text-decoration: none;
   color: #fff;
 }
@@ -241,13 +240,13 @@ body {
 }
 
 /* Websites title */
-.title-websites{
+.title-websites {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.title-websites hr{
+.title-websites hr {
   width: 40%;
 }
 
@@ -288,7 +287,7 @@ body {
 }
 
 .flip-card-1 img {
-  width: 100%;
+  width: 80%;
   object-position: 0 50%;
 }
 
@@ -332,12 +331,35 @@ body {
   background-position-x: -70px;
 }
 
+.btn {
+  background-color: #252525;
+  padding: 10px 80px;
+  margin-top: 0;
+  border: 0;
+  font-family: "lato", "sans-serif";
+  font-weight: bold;
+  display: inline-block;
+}
 
-.title-paid-media{
+.btn:hover {
+  background-color: #e42954;
+  border: 0;
+}
+
+.btn:focus-visible {
+  background-color: 0;
+  border: 0;
+}
+
+.btn:active {
+  background-color: #e42954 !important;
+  border: 0;
+}
+
+.title-paid-media {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .title-paid-media h2 {
@@ -348,35 +370,95 @@ body {
   font-size: 3rem;
 }
 
-.title-paid-media hr{
+.container {
+  margin-top: 80px;
+}
+
+.title-paid-media hr {
   width: 38%;
 }
 
-.paid-media-padre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.ads-1 {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
 
-.paid-media-padre2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.ads-1-p {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
 
-.imagen-1 {
-  width: 650px;
+.ads-2 {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
 
-.imagen-2 {
-  width: 680px;
+.ads-2-p {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
 
-.imagen-3 {
-  width: 690px;
+.ads-3 {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
+
+.ads-3-p {
+  color: #fff;
+  font-family: "Lato", "sans-serif";
+}
+
+/* Design Skills title */
+
+/* Design Skills*/
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+.text-large {
+  font-size: 2em;
+}
+.social-button {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+/* SEO Skills title */
+
+/* SEO Skills*/
+
+.title-skills-page {
+  color: #fff;
+  text-align: center;
+  
+}
+
+/* Certification PDF */
+
+.certification-title{
+  margin-top: 20px;
+}
+
+.certification-title {
+  color: #fff;
+  text-align: center;
+}
+
+.certificationPDF{
+  margin-top:5px;
+  text-align: center;
+}
+.certificationPDF a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "lato" , sans-serif;
+  font-size: 20px;
+}
+
+
 
 @media (max-width: 767.98px) {
   /* NAVBAR */
@@ -438,7 +520,7 @@ body {
     justify-content: center;
     gap: 5px;
   }
-  #videoc5m{
+  #videoc5m {
     display: none;
   }
 
@@ -496,7 +578,6 @@ body {
     height: 151px;
     object-fit: cover;
     border-radius: 10px;
-    /* z-index: 999; */
   }
 
   .card-bg-2 {
@@ -504,7 +585,6 @@ body {
     height: 176px;
     object-fit: cover;
     border-radius: 10px;
-    /* z-index: 999; */
   }
 
   .paid-media-padre {
