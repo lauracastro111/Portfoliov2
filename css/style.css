@@ -378,37 +378,19 @@ body {
   width: 38%;
 }
 
-.ads-1 {
+.paidmediatext {
   color: #fff;
   font-family: "Lato", "sans-serif";
-}
-
-.ads-1-p {
-  color: #fff;
-  font-family: "Lato", "sans-serif";
-}
-
-.ads-2 {
-  color: #fff;
-  font-family: "Lato", "sans-serif";
-}
-
-.ads-2-p {
-  color: #fff;
-  font-family: "Lato", "sans-serif";
-}
-
-.ads-3 {
-  color: #fff;
-  font-family: "Lato", "sans-serif";
-}
-
-.ads-3-p {
-  color: #fff;
-  font-family: "Lato", "sans-serif";
+  
 }
 
 /* Design Skills title */
+
+.skills-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* Design Skills*/
 
@@ -419,8 +401,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 80px;
+  padding-left: 30px;
   padding-right: 30px;
+  margin-top: 30px;
 }
 .text-large {
   font-size: 2em;
@@ -431,16 +414,15 @@ body {
   height: 3em;
 }
 
+.skills-father {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /* SEO Skills title */
 
 /* SEO Skills*/
-
-.title-skills-page {
-  color: #fff;
-  text-align: center;
-  
-}
 
 /* Certification PDF */
 
@@ -456,7 +438,6 @@ body {
   font-family: "lato", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 3rem;
 }
 
 .container {
@@ -467,24 +448,23 @@ body {
   width: 38%;
 }
 
-
-.certificationPDF{
+.certificationPDF {
   text-align: center;
   font-size: 45px;
 }
-.certificationPDF a{
+.certificationPDF a {
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-family: "lato" , sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 30px;
 }
 
-.certifications-box-father{
+.certifications-box-father {
   margin-top: 100px;
 }
 
-.certifications-box-pdf{
+.certifications-box-pdf {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -492,10 +472,9 @@ body {
   padding-left: 50px;
 }
 
-.design-icon{
-  margin: 5px ;
+.design-icon {
+  margin: 5px;
 }
-
 
 @media (max-width: 767.98px) {
   /* NAVBAR */
@@ -550,10 +529,9 @@ body {
     font-size: 1.5em;
   }
 
-.flip-card-1{
-  width: 300px;
-}
-
+  .flip-card-1 {
+    width: 300px;
+  }
 
   /* GRID MULTIMEDIA CONTENT */
   .image-grid {
@@ -641,18 +619,9 @@ body {
   .imagen-3 {
     width: 350px;
   }
-  .certifications-box-pdf{
+  .certifications-box-pdf {
     display: none;
     margin-top: none;
     padding-left: none;
   }
-
-
 }
-
-
-
-
-
-
-
