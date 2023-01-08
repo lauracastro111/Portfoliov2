@@ -410,14 +410,19 @@ body {
 }
 .social-button {
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .skills-father {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.seo-skills{
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* SEO Skills title */
@@ -450,30 +455,49 @@ body {
 
 .certificationPDF {
   text-align: center;
-  font-size: 45px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
 }
 .certificationPDF a {
   text-decoration: none;
-  color: #fff;
+  color: #252525;
   text-align: center;
   font-family: "lato", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .certifications-box-father {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .certifications-box-pdf {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 50px;
-  padding-left: 50px;
 }
 
 .design-icon {
   margin: 5px;
+}
+
+.card-certification-uno{
+  width: 200px;
+  margin-top: 15px;
+}
+
+
+.card-certification-dos{
+width: 200px;
+margin-top: 15px;
+}
+
+.card-certification-tres{
+width: 200px;
+}
+
+.title-cards{
+  font-size: 20px;
 }
 
 @media (max-width: 767.98px) {
