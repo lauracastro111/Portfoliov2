@@ -3,62 +3,22 @@ const im = document.querySelector(".right-side .text-im");
 const laura = document.querySelector(".right-side .text-laura");
 
 
-hiThere.addEventListener("mouseenter", () => {
-    hiThere.classList.remove("dynamicTitleOff")
-    hiThere.classList.add("dynamicTitleOn")
-    document.querySelector(".right-side .text-hi a").innerText = "About"
+function mouseEnterOrLeave(element, text, enter=false) {
+	if(enter){
+		element.classList.remove("dynamicTitleOff");
+		element.classList.add("dynamicTitleOn");
+	}
+	else{
+		element.classList.remove("dynamicTitleOn");
+		element.classList.add("dynamicTitleOff");
+	}
+	element.innerText = text;
 }
-)
-hiThere.addEventListener("mouseleave", () => {
-    hiThere.classList.add("dynamicTitleOff")
-    hiThere.classList.remove("dynamicTitleOn")
-    document.querySelector(".right-side .text-hi a").innerText = "Hi There!"
 
-})
+hiThere.addEventListener("mouseenter", () => mouseEnterOrLeave(hiThere,"About", true))
+im.addEventListener("mouseenter", () => mouseEnterOrLeave(im,"Work", true))
+laura.addEventListener("mouseenter", () => mouseEnterOrLeave(laura,"Skills", true))
 
-
-
-im.addEventListener("mouseenter", () => {
-    im.classList.remove("dynamicTitleOff")
-    im.classList.add("dynamicTitleOn")
-    document.querySelector(".right-side .text-im a").innerText = "Work"
-
-}
-)
-im.addEventListener("mouseleave", () => {
-    im.classList.add("dynamicTitleOff")
-    im.classList.remove("dynamicTitleOn")
-    document.querySelector(".right-side .text-im a").innerText = "I'm"
-
-})
-laura.addEventListener("mouseenter", () => {
-    laura.classList.remove("dynamicTitleOff")
-    laura.classList.add("dynamicTitleOn")
-    document.querySelector(".right-side .text-laura a").innerText = "Skills"
-
-}
-)
-laura.addEventListener("mouseleave", () => {
-    laura.classList.add("dynamicTitleOff")
-    laura.classList.remove("dynamicTitleOn")
-    document.querySelector(".right-side .text-laura a").innerText = "Laura"
-
-})
-
-
-// script for cricle
-const circles = document.querySelectorAll('.element')
-
-const n = 6;  // numero de circulos
-const r = 120 // radio
-
-let angulo = 0;
-let originX = circles[0].offsetLeft
-let originY = circles[0].offsetTop
-
-setInterval(() => {
- angulo += 0.01
- circles.forEach((element,i) =>{
- element.style.left = `${originX + r*Math.cos(angulo + 2*Math.PI/n*i)}px`
- element.style.top = `${originY + r*Math.sin(angulo + 2*Math.PI/n*i)}px`})
-},20)
+hiThere.addEventListener("mouseleave", () => mouseEnterOrLeave(hiThere,"Hi There!"))
+im.addEventListener("mouseleave", () => mouseEnterOrLeave(im,"I'm"))
+laura.addEventListener("mouseleave", () => mouseEnterOrLeave(laura,"Laura"))
