@@ -12,7 +12,7 @@ function mouseEnterOrLeave(element, text, enter=false) {
 		element.classList.remove("dynamicTitleOn");
 		element.classList.add("dynamicTitleOff");
 	}
-	element.innerText = text;
+	element.innerText.firstElementChild = text;
 }
 
 hiThere.addEventListener("mouseenter", () => mouseEnterOrLeave(hiThere,"About", true))
