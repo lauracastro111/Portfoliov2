@@ -1,0 +1,58 @@
+/_______________INDEX______________________/
+
+TITLE
+
+Bonjour
+Je suis
+Laura
+
+About : À propos de moi
+Work: Mon Travail
+Skills: Compétences 
+
+PARRAFO 
+
+Je suis une marketing des médias sociaux et une conceptrice de sites Web, passionné par ce que je fais.
+Je crois que même l'impossible est possible.
+C'est vous qui fixez les limites !
+
+Button 
+
+Curriculum Vitae
+
+
+/_____________WORK PAGE__________________/
+
+
+TITLE 
+
+Multimedia Content : Contenu Multimédia
+
+Websites: Sites Internet
+
+Paid Media: Publicités
+
+campagne publicitaire 1
+
+L'objectif principal de cette campagne publicitaire sur Facebook était d'atteindre des clients potentiels avec un faible investissement.
+
+campagne publicitaire 2
+
+Dans cette campagne, avec un investissement de $20  par semaine, nous avons réussi à atteindre 10,446 personnes et 175 conversions.
+
+campagne publicitaire 3
+
+Pendant cinq jours, une campagne de conversion a été menée sur les annonces Facebook dans le but de trouver des clients potentiels et de conclure des ventes, l'objectif fixé par l'entreprise a été atteint.
+
+
+
+/_______________SKILL PAGE________________/
+
+Design skills: Compétences en design
+
+Seo Skills: Compétences en SEO
+
+Certificates: Certificates
+
+Download: Télécharger
+

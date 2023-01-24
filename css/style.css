@@ -19,6 +19,12 @@ button.navbar-toggler {
   justify-content: flex-end;
 }
 
+/* Escondo la navbar en desktop */
+
+#about ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    display: none;
+}
+
 /* radioButton style */
 
 .form-switch .form-check-input {
@@ -425,6 +431,11 @@ body {
   margin-right: 100px;
 }
 
+.design-skills{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 /* SEO Skills title */
 
 /* SEO Skills*/
@@ -468,7 +479,7 @@ body {
 }
 
 .certifications-box-father {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .certifications-box-pdf {
@@ -507,6 +518,10 @@ width: 200px;
     text-align: right;
   }
 
+  #about ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    display: contents;
+}
+
   .form-check {
     display: flex;
     flex-direction: row;
@@ -521,20 +536,38 @@ width: 200px;
 
   .right-side div {
     font-size: 150px;
-    font-size: 60px;
+    font-size: 80px;
     margin: 0px;
-    padding-left: 45px;
+    padding-left: 15px;
     text-align: justify;
   }
+
+  .title-right-side{
+    margin-top: -90px !important;
+    font-size: 80px;
+  }
+
+
   .hero-parrafo {
     text-align: justify;
     font-weight: 500;
-    margin-top: 30px;
-    font-size: 16px;
+    font-size: 18px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 25px;
   }
 
   .hero-button {
     font-size: 15px;
+    margin-top: 30px;
+    margin-left:45px;
+    margin-bottom:0px;
+  }
+
+  .text-center{
+    padding-left: none;
+    padding-right: none;
+    margin-top: 20px;
   }
 
   /* HERO IMAGE */
@@ -643,9 +676,26 @@ width: 200px;
   .imagen-3 {
     width: 350px;
   }
+
+  .text-center{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .certifications-box-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificationPDF {
+  padding: none;
+  margin-top: 10px;
+}
+
+  /* .certifications-box-pdf {
     display: none;
     margin-top: none;
     padding-left: none;
-  }
+  } */
 }
