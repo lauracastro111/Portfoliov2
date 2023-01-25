@@ -33,8 +33,8 @@ laura.addEventListener("mouseleave", () => mouseEnterOrLeave(laura, "Laura"));
 const texts = [
   {
     id: "it7",
-    eng: `I am a social media & web designer, passionate about what I do. <br /> I believe that even the impossible is possible. <br /> You put the limits!`,
-    fra: `Je suis une marketing des médias sociaux et une conceptrice de sites Web, passionné par ce que je fais. <br /> Je crois que même l'impossible est possible. <br /> C'est vous qui fixez les limites !`
+    eng: `I am a social media & web designer, passionate about what I do. \n I believe that even the impossible is possible. \n You put the limits!`,
+    fra: `Je suis une marketing des médias sociaux et une conceptrice de sites Web, passionné par ce que je fais.\n Je crois que même l'impossible est possible.\n C'est vous qui fixez les limites !`
   }
 ];
 const checkBox = document.querySelector(".form-check input");
@@ -45,11 +45,10 @@ const switchLenguage = () => {
     let text = texts.find((txt) => ele.id === txt.id);
     if (checkBox.checked) {
       console.log("French");
-      // ele.innerHtml = text.fra;
       ele.innerText = text.fra;
     } else {
       console.log("English");
-      ele.innerText = text.eng;
+      ele.textContent = text.eng;
     }
   });
 };
