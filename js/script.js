@@ -41,24 +41,21 @@ const switchLenguage = () => {
   
    if (checkBox.checked) {
      
-      mouseEnterOrLeave(hiThere, "À propos de moi", true);
       mouseEnterOrLeave(hiThere, "Bonjour");
-      mouseEnterOrLeave(im, "Mon Travail", true);
       mouseEnterOrLeave(im, "Je suis");
-      mouseEnterOrLeave(laura, "Compétences", true);
+      mouseEnterOrLeave(laura, "Laura");
      
       hiThere.addEventListener("mouseenter", () =>  mouseEnterOrLeave(hiThere, "À propos de moi", true));
       hiThere.addEventListener("mouseleave", () =>  mouseEnterOrLeave(hiThere, "Bonjour"));
       im.addEventListener("mouseenter", () => mouseEnterOrLeave(im, "Mon Travail", true));
       im.addEventListener("mouseleave", () => mouseEnterOrLeave(im, "Je suis"));
       laura.addEventListener("mouseenter", () =>  mouseEnterOrLeave(laura, "Compétences", true));
+      laura.addEventListener("mouseleave", () => mouseEnterOrLeave(laura, "Laura"));
           
    }else{
-      mouseEnterOrLeave(hiThere, "About", true);
       mouseEnterOrLeave(hiThere, "Hi There!");
-      mouseEnterOrLeave(im, "Work", true);
       mouseEnterOrLeave(im, "I'm");
-      mouseEnterOrLeave(laura, "Skills", true);
+      mouseEnterOrLeave(laura, "Laura");
          
      
       hiThere.addEventListener("mouseenter", () =>  mouseEnterOrLeave(hiThere, "About", true));
@@ -66,6 +63,7 @@ const switchLenguage = () => {
       im.addEventListener("mouseenter", () => mouseEnterOrLeave(im, "Work", true));
       im.addEventListener("mouseleave", () => mouseEnterOrLeave(im, "I'm"));
       laura.addEventListener("mouseenter", () =>  mouseEnterOrLeave(laura, "Skills", true));
+      laura.addEventListener("mouseleave", () => mouseEnterOrLeave(laura, "Laura"));
    }
     
   [...alltexts].forEach((ele) => {
